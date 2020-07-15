@@ -12,6 +12,6 @@ jobs:
       with:
         parent-dependencies: 'kogito-runtimes'
         child-dependencies: 'kogito-examples'
-        build-command: 'mvn clean install -DskipTests'
+        build-command: 'mvn clean install'
       env:
           GITHUB_TOKEN: "${{ secrets.KIE_TOKEN }}"
